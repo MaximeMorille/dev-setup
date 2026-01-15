@@ -11,7 +11,7 @@ My personal dev setup
 - [git](https://git-scm.com/)
 - [gpg](https://www.gnupg.org/index.html)
 - [brew](https://brew.sh/)
-- [delta](https://github.com/dandavison/delta]
+- [delta](https://github.com/dandavison/delta)
 - [bat](https://github.com/sharkdp/bat)
 - [fzf](https://github.com/junegunn/fzf)
 - [fd](https://github.com/sharkdp/fd)

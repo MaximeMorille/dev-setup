@@ -1,7 +1,10 @@
 # dev-setup
 My personal dev setup
 
-> TODO: add a minimal list of commands to setup a working dev env
+## TODO
+
+- [ ] add a minimal list of commands to setup a working dev env
+- [ ] push .gitconfig, .zshrc and .zsh_aliases
 
 ## Tools
 

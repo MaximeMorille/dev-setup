@@ -20,6 +20,7 @@ My personal dev setup
 - [fd](https://github.com/sharkdp/fd)
 - [sdkman](https://sdkman.io/)
 - [nvm](https://github.com/nvm-sh/nvm)
+- [HTTPie](https://httpie.io/)
 
 ### To test
 

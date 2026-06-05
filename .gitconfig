@@ -1,0 +1,43 @@
+[credential]
+	helper = store
+[user]
+	email = maxime@morille.eu
+	name = Maxime Morille
+[core]
+	editor = vim
+	pager = delta
+	ignorecase = false
+
+[interactive]
+	diffFilter = delta --color-only
+
+[merge]
+	tool = vscode
+
+[pull]
+	rebase = true
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = brightblue bold
+
+[alias]
+	lg = log --follow --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr - %C(dim green)<%ar>%C(nodim green))%C(bold blue)<%an - %C(dim blue)%cn%Creset%C(bold blue)>%Creset' --abbrev-commit
+	changelog-commits = log --pretty=format:"%H"
+	changelog-messages = log --pretty=format:"%s"
+	st = status
+	ci = commit
+	cm = commit -m
+	br = branch
+	co = checkout
+	unstage = reset HEAD --
+	update = !git stash && git fetch && git rebase && git stash pop
+	list-branches= "! for branch in `git branch -r | grep -v /HEAD`;do echo `git show --format=\"%ai %ar by %an\" $branch | head -n 1` \t$branch; done | sort -r"
+	new-enhancement="! git checkout -b enhancement/MM/$1 #"
+	new-feature="! git checkout -b feature/MM/$1 #"
+	new-fix="! git checkout -b fix/MM/$1 #"
+	new-task="! git checkout -b task/MM/$1 #"
+	new-bump="! git checkout -b bump-to-$1 #"
+	fpr=!git fetch --prune && git rebase
+	cbr="! git branch -vv | grep ': gone]'|  grep -v \"\\*\" | awk '{ print $1; }' | xargs git branch -D"
